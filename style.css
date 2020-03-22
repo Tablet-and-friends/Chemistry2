@@ -15,6 +15,7 @@ width: 100%;
 position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 /* Style the links inside the navigation bar */
@@ -74,7 +75,6 @@ position: fixed;
 
   h1{
     text-align: center;
-    margin-top: 100px;
     margin-bottom: 0px;
     font-size: 100px;
     font-family: 'Sedgwick Ave Display', cursive;
@@ -121,10 +121,9 @@ position: fixed;
 
   .PerTable{
     display: block;
-    width: 75%;
+    width: 1100px;
     height:auto;
     margin: auto;
-    margin-top: 100px;
   }
 
   .Element{
@@ -151,6 +150,11 @@ position: fixed;
   margin: 30px 20px;
   margin-top: 100px;
   height:250px;
+}
+
+.main{
+  margin-top:150px;
+  margin-left: 200px;
 }
 
 /* .center {

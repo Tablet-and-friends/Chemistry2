@@ -1,12 +1,11 @@
 body{
-  background-image: -webkit-linear-gradient(0deg,aquamarine, rgb(211, 211, 136));
+  background-color: #fecf9d;
   font-family: sans-serif;
 }
 
 .topnav {
    /* background-color: #333; */
-   background-image:repeating-linear-gradient(90deg,rgb(88, 92, 49),rgb(190, 231, 228));
-   border-radius: 10px;
+   background-color: #d97a15;
   font-family: sans-serif;
   /* border: 1px solid; */
 display: inline-block;
@@ -33,20 +32,20 @@ nav a {
   font-size: 22px;
   border-color: transparent;
   border-style: solid;
-  transition: color 1s,border linear 0.5s;
+  transition: color 0.5s,border linear 0.5s;
 }
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-image: linear-gradient(90deg,aquamarine,rgb(211, 211, 136));
-  color: black;
-  border-color: yellow;
-  border-radius: 10px;
+  /*background-image: linear-gradient(90deg,aquamarine,rgb(211, 211, 136));*/
+  color: #d7f547;
+  /*border-color: yellow;*/
+  /*border-radius: 10px;*/
 }
 
 /* Add a color to the active/current link */
 nav a.active {
-  background-color: #4CAF50;
+  background-color: #ff6200;
   color: white;
   border-radius: 10px;
 }
@@ -84,9 +83,9 @@ nav a.active {
 .topnav input[type=text] {
   position: relative;
     padding: 12px;
-    background-image: -webkit-linear-gradient(0deg,rgb(200, 211, 136), rgb(211, 211, 136));
-    border: 3px solid rgb(255, 255, 146);
-    margin-top: 5px;
+    background-color: #fecf9d;
+    /*border: 3px solid rgb(255, 255, 146);*/
+    margin-top: 8px;
     margin-right: 16px;
     height: 20px;
     font-size: 17px;
@@ -102,7 +101,7 @@ nav a.active {
         width: 45%;
         text-align: center;
         font-size: 44px;
-        background-image: -webkit-linear-gradient(90deg,aquamarine, rgb(211, 211, 136));
+        background: linear-gradient(180deg, rgba(210,161,43,1) 0%, rgba(244,250,5,1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         /* float: left; */

@@ -22,8 +22,8 @@ display: inline;
 }
 
 nav a {
-  float: left;
-  min-width: 100px;
+  float: none;
+  min-width: 8%;
   color: #f2f2f2;
   display: inline-block;
   text-align: center;
@@ -71,6 +71,7 @@ nav a.active {
 .s{
   position: relative;
   display: inline-block;
+  float: right;
 }
 
 .s a{
@@ -98,7 +99,7 @@ nav a.active {
         padding-top: 0px;
         margin-top: 0px;
         display: inline-block;
-        width: 45%;
+        width: 30%;
         text-align: center;
         font-size: 44px;
         background: linear-gradient(180deg, rgba(210,161,43,1) 0%, rgba(244,250,5,1) 100%);

@@ -159,8 +159,8 @@ nav a.active {
   }
 
   .Element{
-    float: right;
-    display: inline-block;
+    float: right;/*
+    display: inline-block;*/
     width: 25%;
     margin:20px;
     /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
@@ -197,12 +197,24 @@ nav a.active {
 }
 
 .main ul{
-  width: 1000px;
+  width: 80%;
   list-style-image: url('assets/kolba.png');
-  clear: right;
+  list-style-position: inside;
+}
+.main ol{
+  width: 80%;
+  list-style-position: inside;
 }
 .main li{
   font-size: 25px;
-  width: 1000px;
+  width: 80%;
   margin:10px;
+}
+
+.Reaction{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width:50%;
 }

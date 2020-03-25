@@ -107,7 +107,7 @@ nav a.active {
 
   h1{
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     font-size: 100px;
     font-family: 'Sedgwick Ave Display', cursive;
     background-image: -webkit-linear-gradient(90deg,red,yellow);
@@ -197,11 +197,12 @@ nav a.active {
 }
 
 .main ul{
-  width: 700px;
+  width: 1000px;
   list-style-image: url('assets/kolba.png');
   clear: right;
 }
 .main li{
-  font-size: 20px;
-  width: 700px;
+  font-size: 25px;
+  width: 1000px;
+  margin:10px;
 }

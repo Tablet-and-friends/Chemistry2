@@ -40,8 +40,6 @@ nav ul li a{
   padding: 18px 16px;
   text-decoration: none;
   font-size: 22px;
-  border-color: transparent;
-  border-style: solid;
   transition: color 0.5s,border linear 0.5s;
 }
 nav ul li ul{
@@ -78,7 +76,6 @@ nav li:hover .top, nav li:hover .active{
   /*border-color: yellow;*/
   /*border-radius: 10px;*/
 }
-
 /* Add a color to the active/current link */
 nav a.active {
   background-color: #ff6200;
@@ -182,6 +179,7 @@ nav p{
    margin: auto;
    margin-top: 50px;
 }
+
   .periods td{
     font-family: sans-serif;
     font-size: 17px;
@@ -210,7 +208,7 @@ nav p{
 
 .ElementInfo p{
   float:left;
-  width: 60%;
+  width: 100%;
   font-family: sans-serif;
   font-size: 26px;
   color: black;
@@ -223,12 +221,24 @@ nav p{
 
 .main{
   margin-top:150px;
-  margin-left: 200px;
+  margin-left: 220px;
 }
 
-/* .center {
-  margin: auto;
-  width: 25%;
-  border: 3px solid green;
-  padding: 10px;
-} */
+.group{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.main ul{
+  width: 700px;
+  list-style-image: url('assets/kolba.png');
+  clear: right;
+}
+.main li{
+font-size: 25px;
+  width: 1000px;
+  margin: 10px;
+
+}

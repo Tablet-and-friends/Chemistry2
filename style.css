@@ -4,7 +4,8 @@
 }
 body{
   background-color: #fecf9d;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sana', sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -97,12 +98,10 @@ nav p{
         float: left;
         padding-left: 7%;
  }
-
 /*a{
   display: block;
   margin-bottom: 50px;
 }*/
-
 .res{
   display: block;
   position: absolute;
@@ -115,12 +114,10 @@ nav p{
   border-bottom: 1px solid black;
   z-index: 2;
 }
-
 .s{
   position: relative;
   display: inline-block;
   float: right;
-}
 
 .s a{
   text-decoration: none;
@@ -128,7 +125,6 @@ nav p{
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: bold;
 }
-
 .topnav input[type=text] {
   position: relative;
     padding: 12px;
@@ -140,7 +136,22 @@ nav p{
     font-size: 17px;
   }
 
-
+.slidenv{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #d97a15;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.slidenav a{
+    display: block;
+}
 
   h1{
     text-align: center;

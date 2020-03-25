@@ -5,12 +5,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One&display=swap" rel="stylesheet">
     <title>ХИМИЯ</title>
+
     <script type="text/javascript" src="search.js"></script>
     <script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+<div id = "content">
     <nav>
         <ul>
             <li><a class="active" href="Home.html">Таблица</a></li>
@@ -30,7 +31,7 @@
         </ul>
         <p>ХИМИЯ</p >
         <div class="s">
-            <input type="text" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);" onfocus="closeSearch();">
+            <input type="text" placeholder="Search for an element.." value=""  onblur="this.setAttribute('value',this.value); check(this.value);" onblur="check(this.value);" onblur="closeSearch();">
 
             <div class="res">
             <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
@@ -61,6 +62,8 @@
             </div>
         </div>
     </nav>
+    kur
+
     <div class="main">
     <img src="assets\Periodic_Table.png" alt="Periodic table of elements" class="PerTable" usemap="#PerTable">
 
@@ -98,7 +101,7 @@
       <area shape="rect" coords="910,335,970,415" alt="Te" href="pages\Te.html" title="Телур">
       <!--<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">-->
     </map>
-
-  </div>
+    </div>
+</div>
 </body>
 </html>

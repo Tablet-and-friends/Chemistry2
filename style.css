@@ -199,6 +199,7 @@ nav a.active {
 .main ul{
   width: 500px;
   list-style-image: url('assets/kolba.png');
+  clear: right;
 }
 .main li{
   width: 500px;

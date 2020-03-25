@@ -17,9 +17,6 @@ nav {
   z-index: 1;
   height: 64px;
 }
-
-/* Style the links inside the navigation bar */
-
 nav ul{
     float: left;
 
@@ -61,7 +58,6 @@ nav ul li:hover ul{
 nav ul li ul li{
     text-align: center;
 }
-
 nav ul li ul li a{
     padding: 9px 21px 9px 21px;
     margin-left: 10px;
@@ -98,61 +94,38 @@ nav p{
         float: left;
         padding-left: 7%;
  }
-/*a{
-  display: block;
-  margin-bottom: 50px;
-}*/
-.res{
-  display: block;
-  position: absolute;
+ .res{
+   display: block;
+   position: absolute;
+ }
+ .res div {
+   display: none;
+   background-image: linear-gradient(180deg,white,rgb(238, 255, 204));
+   padding: 5px;
+   width: 130px;
+   border-bottom: 1px solid black;
+   z-index: 2;
+ }
+ .s{
+   position: relative;
+   display: inline-block;
 }
-.res div {
-  display: none;
-  background-image: linear-gradient(180deg,white,rgb(238, 255, 204));
-  padding: 5px;
-  width: 130px;
-  border-bottom: 1px solid black;
-  z-index: 2;
-}
-.s{
-  position: relative;
-  display: inline-block;
-  float: right;
-
-.s a{
-  text-decoration: none;
-  color: black;
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-weight: bold;
-}
-.topnav input[type=text] {
-  position: relative;
-    padding: 12px;
-    background-color: #fecf9d;
-    /*border: 3px solid rgb(255, 255, 146);*/
-    margin-top: 8px;
-    margin-right: 16px;
-    height: 20px;
-    font-size: 17px;
-  }
-
-.slidenv{
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    display: block;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #d97a15;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.7s;
-}
-.slidenav a{
-    display: block;
-}
-
+ .s a{
+   text-decoration: none;
+   color: black;
+   font-family: 'Sedgwick Ave Display', cursive;
+   font-weight: bold;
+ }
+ nav input[type=text] {
+   position: relative;
+     padding: 12px;
+     background-color: #fecf9d;
+     /*border: 3px solid rgb(255, 255, 146);*/
+     margin-top: 8px;
+     margin-right: 16px;
+     height: 20px;
+     font-size: 17px;
+   }
   h1{
     text-align: center;
     margin-bottom: 0px;
@@ -161,42 +134,6 @@ nav p{
     background-image: -webkit-linear-gradient(90deg,red,yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-
-  .groups td{
-    font-size: 24px;
-    border-color: transparent;
-    border-style: solid;
-    background-color: yellow;
-    margin: 10px 20px;
-    display: inline-block;
-    min-width: 50px;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.groups td:hover{
-    border-color: black;
-    background-color: aquamarine;
-    font: bold;
-
-}
-
-.groups {
-  margin: auto;
-  width: 25%;
-  border: 3px solid green;
-  padding: 10px;
-}
-
- table{
-   margin: auto;
-   margin-top: 50px;
-}
-  .periods td{
-    font-family: sans-serif;
-    font-size: 17px;
-    margin: 30px;
   }
 
   .PerTable{
@@ -231,15 +168,15 @@ nav p{
   margin-top: 100px;
   height:250px;
 }
-
 .main{
   margin-top:150px;
-  margin-left: 200px;
+  margin-left: 220px;
 }
-
-/* .center {
-  margin: auto;
-  width: 25%;
-  border: 3px solid green;
-  padding: 10px;
-} */
+.main ul{
+  width: 500px;
+  list-style-image: url('assets/kolba.png');
+  clear: right;
+}
+.main li{
+  width: 500px;
+}

@@ -45,7 +45,8 @@ nav ul li a{
   transition: color 0.5s,border linear 0.5s;
 }
 nav ul li ul{
-    margin-top:64px;
+    margin-top:60px;
+
     padding: none;
     display: none;
     position: absolute;

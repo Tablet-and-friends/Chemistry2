@@ -1,3 +1,13 @@
+function openSlideMenu(){
+    document.getElementById("slide-menu").style.width = '250px';
+    document.getElementById("main-content").style.marginLeft = '250px';
+
+}
+function closeSlideMenu(){
+    document.getElementById("slide-menu").style.width = '0px';
+    document.getElementById("main-content").style.marginLeft = '0px';
+}
+
 function check(val){
 
 changeDisplay("Берилий Be",4,val,"Be");

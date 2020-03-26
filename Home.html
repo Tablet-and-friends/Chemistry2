@@ -11,6 +11,11 @@
 
 <body>
     <nav>
+        <span class = "open-slide">
+            <a href="#" onclick = "openSlideMenu()">
+                <i class = "fas fa-bars"></i>
+            </a>
+        </span>
         <ul>
             <li><a class="active" href="Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
@@ -61,7 +66,19 @@
         </div>
     </nav>
 
-    <div class="main">
+    <div class="slide-nav" id = "slide-menu">
+        <a href="#" class = "close-slide" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#">Химични Свойства</a>
+        <a href="#">Физични Свойства</a>
+        <a href="#">Добив</a>
+        <a href="#">Употреба</a>
+        <a href="#">Горене</a>
+    </div>
+
+
+  <div class="main" id = "main-content">
     <img src="assets\Periodic_Table.png" alt="Periodic table of elements" class="PerTable" usemap="#PerTable">
 
     <map name="PerTable">

@@ -5,22 +5,28 @@
     <link rel="stylesheet" type="text/css" href="..\style.css">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One&display=swap" rel="stylesheet">
     <title>Пета "А" група - Арсен</title>
+    <script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="..\search.js"></script>
 </head>
 
 <body>
     <nav>
+        <span class = "open-slide">
+            <a href="#" onclick = "openSlideMenu()">
+                <i class = "fas fa-bars"></i>
+            </a>
+        </span>
         <ul>
             <li><a class="active" href="../Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="pages/IA.html">IA</a></li>
-                    <li><a href="pages/IIA.html">IIA</a></li>
-                    <li><a href="pages/IIIA.html">IIIA</a></li>
-                    <li><a href="pages/IVA.html">IVA</a></li>
-                    <li><a href="pages/VA.html">VA</a></li>
-                    <li><a href="pages/VIA.html">VIA</a></li>
-                    <li><a href="pages/VIIA.html">VIIA</a></li>
+                    <li><a href="IA.html">IA</a></li>
+                    <li><a href="IIA.html">IIA</a></li>
+                    <li><a href="IIIA.html">IIIA</a></li>
+                    <li><a href="IVA.html">IVA</a></li>
+                    <li><a href="VA.html">VA</a></li>
+                    <li><a href="VIA.html">VIA</a></li>
+                    <li><a href="VIIA.html">VIIA</a></li>
                 </ul>
             </li>
             <li><a class = "top" href="#elements">Елементи</a></li>
@@ -61,8 +67,19 @@
         </div>
     </nav>
 
-            <div class="main">
-      <h1>Арсен (As)</h1>
+    <div class="slide-nav" id = "slide-menu">
+        <a href="#" class = "close-slide" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#">Химични Свойства</a>
+        <a href="#">Физични Свойства</a>
+        <a href="#">Добив</a>
+        <a href="#">Употреба</a>
+        <a href="#">Горене</a>
+    </div>
+
+
+    <div class="main" id = "main-content">      <h1>Арсен (As)</h1>
       <img src="..\assets\VA\As_Picture.jpg" alt="снимка на арсен">
       <div >
         <img src="..\assets\VA\As-sf.jpg" alt="кристална решетка">

@@ -17,13 +17,12 @@
             <li><a class="active" href="Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="#">IA</a></li>
-                    <li><a href="#">IIA</a></li>
-                    <li><a href="#">IIIA</a></li>
-                    <li><a href="#">IVA</a></li>
-                    <li><a href="#">VA</a></li>
-                    <li><a href="#">VIA</a></li>
-                    <li><a href="#">VIA</a></li>
+                  <li><a href="pages/IIA.html">IIA</a></li>
+                  <li><a href="pages/IIIA.html">IIIA</a></li>
+                  <li><a href="pages/IVA.html">IVA</a></li>
+                  <li><a href="pages/VA.html">VA</a></li>
+                  <li><a href="pages/VIA.html">VIA</a></li>
+                  <li><a href="pages/VIIA.html">VIIA</a></li>
                 </ul>
             </li>
             <li><a class = "top" href="#elements">Елементи</a></li>
@@ -31,7 +30,8 @@
         </ul>
         <p>ХИМИЯ</p >
         <div class="s">
-            <input type="text" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);" onfocus="closeSearch();">
+            <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
+
 
             <div class="res">
             <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>

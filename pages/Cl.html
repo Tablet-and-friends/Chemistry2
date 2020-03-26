@@ -9,73 +9,96 @@
 </head>
 
 <body>
-    <div class="topnav">
-      <nav>
-        <a href="..\Home.html">Таблица</a>
-        <a href="#groups">Групи</a>
-        <a href="#elements">Елементи</a>
-        <a href="#about">Създатели</a>
-        <span>ХИМИЯ</span>
-      </nav>
-        <div class="s">
-            <input type="text" placeholder="Serch for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);" onblur="closeSearch();" >
+  <nav>
+      <ul>
+          <li><a class="active" href="..\Home.html">Таблица</a></li>
+          <li><a class = "top" href="#groups">Групи</a>
+              <ul>
+                  <li><a href="IIA.html">IIA</a></li>
+                  <li><a href="IIIA.html">IIIA</a></li>
+                  <li><a href="IVA.html">IVA</a></li>
+                  <li><a href="VA.html">VA</a></li>
+                  <li><a href="VIA.html">VIA</a></li>
+                  <li><a href="VIIA.html">VIIA</a></li>
+              </ul>
+          </li>
+          <li><a class = "top" href="#elements">Елементи</a></li>
+          <li><a class = "top" href="#about">Създатели</a></li>
+      </ul>
+      <p>ХИМИЯ</p >
+      <div class="s">
+          <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
 
-            <div class="res">
-            <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
-            <div id="Mg"><a href="pages/Mg.html">Магнезий (Mg)</a></div>
-            <div id="Ca"><a href="pages/Ca.html">Калций (Ca)</a></div>
-            <div id="Sr"><a href="pages/Sr.html">Стронций (Sr)</a></div>
-            <div id="Ba"><a href="pages/Ba.html">Барий (Ba)</a></div>
-            <div id="B"><a href="pages/B.html">Бор (B)</a></div>
-            <div id="Al"><a href="pages/Al.html">Алуминий (Al)</a></div>
-            <div id="Ga"><a href="pages/Ga.html">Галий (Ga)</a></div>
-            <div id="In"><a href="pages/In.html">Индий (In)</a></div>
-            <div id="C"><a href="pages/C.html">Въглерод (C)</a></div>
-            <div id="Si"><a href="pages/Si.html">Силиций (Si)</a></div>
-            <div id="Ge"><a href="pages/Ge.html">Германий (Ge)</a></div>
-            <div id="Sn"><a href="pages/Sn.html">Калай (Sn)</a></div>
-            <div id="N"><a href="pages/N.html">Азот (N)</a></div>
-            <div id="P"><a href="pages/P.html">Фосфор (P)</a></div>
-            <div id="As"><a href="pages/As.html">Арсен (As)</a></div>
-            <div id="Sb"><a href="pages/Sb.html">Антимон (Sb)</a></div>
-            <div id="O"><a href="pages/O.html">Кислород (O)</a></div>
-            <div id="S"><a href="pages/S.html">Сяра (S)</a></div>
-            <div id="Se"><a href="pages/Se.html">Селен (Se)</a></div>
-            <div id="Te"><a href="pages/Te.html">Телур (Te)</a></div>
-            <div id="F"><a href="pages/F.html">Флуор (F)</a></div>
-            <div id="Cl"><a href="pages/Cl.html">Хлор (Cl)</a></div>
-            <div id="Br"><a href="pages/Br.html">Бром (Br)</a></div>
-            <div id="I"><a href="pages/I.html">Йод (I)</a></div>
-            </div>
-
-            </div>
-            </div>
+          <div class="res">
+          <div id="Be"><a href="Be.html">Берилий (Be)</a></div>
+          <div id="Mg"><a href="Mg.html">Магнезий (Mg)</a></div>
+          <div id="Ca"><a href="Ca.html">Калций (Ca)</a></div>
+          <div id="Sr"><a href="Sr.html">Стронций (Sr)</a></div>
+          <div id="Ba"><a href="Ba.html">Барий (Ba)</a></div>
+          <div id="B"><a href="B.html">Бор (B)</a></div>
+          <div id="Al"><a href="Al.html">Алуминий (Al)</a></div>
+          <div id="Ga"><a href="In.html">Индий (In)</a></div>
+          <div id="C"><a href="C.html">Въглерод (C)</a></div>
+          <div id="Si"><a href="Si.html">Силиций (Si)</a></div>
+          <div id="Ge"><a href="Ge.html">Германий (Ge)</a></div>
+          <div id="Sn"><a href="Sn.html">Калай (Sn)</a></div>
+          <div id="N"><a href="N.html">Азот (N)</a></div>
+          <div id="P"><a href="P.html">Фосфор (P)</a></div>
+          <div id="As"><a href="As.html">Арсен (As)</a></div>
+          <div id="Sb"><a href="Sb.html">Антимон (Sb)</a></div>
+          <div id="O"><a href="O.html">Кислород (O)</a></div>
+          <div id="S"><a href="S.html">Сяра (S)</a></div>
+          <div id="Se"><a href="Se.html">Селен (Se)</a></div>
+          <div id="Te"><a href="Te.html">Телур (Te)</a></div>
+          <div id="F"><a href="F.html">Флуор (F)</a></div>
+          <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
+          <div id="Br"><a href="Br.html">Бром (Br)</a></div>
+          <div id="I"><a href="I.html">Йод (I)</a></div>
+          </div>
+      </div>
+  </nav>
 
             <div class="main">
       <h1>Хлор (Cl)</h1>
-      <img src="..\assets\VIIA\Cl_Picture.jpg" alt="снимка на хлор">
+      <img src="..\assets\VIIA\Cl_Picture.jpg" alt="снимка на хлор" class="pic" style="display:inline;">
+      <img src="..\assets\VIIA\Cl-sf.jpg" alt="кристална решетка" style="margin:0px 80px;" class="pic">
       <div class="ElementInfo">
-        <p>Хлорът е член на халогенното семейство. Халогените са елементите, съставляващи седма "А" група от периодичната таблица. Те включват флуор, бром, йод и астатин. Хлорът е силно реактивен, класирайки се само под флуора по своята химическа активност.
+        <p style="margin-bottom:30px;">Хлорът е член на халогенното семейство. Халогените са елементите, съставляващи седма "А" група от периодичната таблица. Те включват флуор, бром, йод и астатин. Хлорът е силно реактивен, класирайки се само под флуора по своята химическа активност.
         </p>
-          <img src="..\assets\VIIA\Cl_Structure.png" alt="атомна структура на хлор" class="Element">
+          <img src="..\assets\VIIA\Cl_Structure.png" alt="атомна структура на хлор" class="Element" >
+
         <ol>
-          <li>Физични свойства <p>
+          <li>Физични свойства <p style="margin:30px 0px;">
 Хлорът е плътен газ с плътност 3,21 грама на литър. За сравнение, плътността на въздуха е 1,29 грама на литър. Кондензира се при температура от -34.05 ° C (-29.29 ° F) и от течност до твърдо вещество при -101.00 ° C (-149.80 ° F). Газът е разтворим във вода.</p></li>
-          <li>Химични свойства: <p>
+          <li>Химични свойства: <p style="margin:30px 0px;">
 Хлорът е много активен елемент. Той се комбинира с всички елементи с изключение на благородните газове. Реакцията между хлора и други елементи често може да бъде бурна. Например хлорът реагира експлозивно с водорода, за да образува хлороводород:
 <img src="..\info\Reactions\H2+Cl2.png" alt="reaction" class="Reaction">
 Хлорът не изгаря, но подобно на кислорода, той помага на други вещества да се изгарят. Той е силно окисляващо средство (химическо вещество, което се отдава или поема електрони от друго вещество).
 </p>
-<p>Взаимодействие с метали:</p>
+<p style="margin-bottom:30px;">Взаимодействие с метали:</p>
 <img src="..\info\Reactions\Cl+Ca.png" alt="reaction" class="Reaction">
 <img src="..\info\Reactions\I+Cl.png" alt="reaction" class="Reaction">
-<p>Взаимодействие с основи:</p>
+<p style="margin-bottom:30px;">Взаимодействие с основи:</p>
 <img src="..\info\Reactions\KOH+Cl.png" alt="reaction" class="Reaction">
-<p></p>
                     </li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>В природата:<p style="margin:30px 0px;">
+Хлорът се среща обикновено както в земната кора, така и в морската вода. Неговото изобилие в земята е около 100 до 300 части на милион. Съдържанието му в морската вода е около 2 процента. Най-често срещаното съединение на хлор в морската вода е натриевият хлорид. По-малки количества калиев хлорид се срещат и в морската вода.
+Най-често срещаните минерали на хлора са халит или каменна сол (NaCl), силвит (KCl) и камалит (KCl MgCl 2).</p></li>
+
+          <li>Получаване:<p style="margin:30px 0px;">
+            <img src="..\info\Reactions\HCl.png" alt="reaction" class="Reaction"
+            style="float:right">
+Хлорът се получава чрез преминаване на електрически ток през воден разтвор на натриев хлорид или чрез разтопен (разтопен) натриев хлорид.</p>
+<p style="margin:30px 0px;">Този процес е един от най-важните търговски процеси в индустрията. В реакцията също се образува водороден газ (H2).</p>
+
+                  </li>
+
+          <li>Въздействия върху здравето <p style="margin:30px 0px;">
+Хлорният газ е изключително токсичен. В малки дози дразни носа и гърлото. Човек, изложен на хлор, може да почувства кихане, течащ нос и зачервени очи.
+В по-големи дози хлорът може да бъде фатален. Всъщност хлорният газ се използва по време на Първата световна война (1914-18 г.) от германските армии като оръжие. Хиляди войници бяха убити или сериозно ранени, като го дишаха. Тези, които са оцелели с газови атаки, често са били осакатени цял живот. Те не успяха да дишат нормално в резултат на увреждането на гърлото и белите дробове.
+От друга страна, хлорните съединения са от съществено значение за растенията. Те се разболяват или умират без него. В растенията хлорът се счита за микроелемент, който е вещество, необходимо в много малки количества за поддържане на добро здраве. Листата пожълтяват и умират, когато растенията получават твърде малко хлор от почвата.
+Съединенията на хлора са важни за поддържането на добро здраве при хора и животни. Средно човешкото тяло съдържа около 95 грама хлор. Солната киселина (HCl) в стомаха например помага в храносмилането на храните. Натриевият хлорид (NaCl) и калиев хлорид (KCl) играят важна роля за начина, по който нервните съобщения се изпращат по цялото тяло. Тъй като хората ядат много сол, липсата на хлорни съединения рядко е здравословен проблем.
+Хлорният газ е изключително токсичен. В големи дози може да бъде фатално. От друга страна, хлорните съединения са от съществено значение за растенията.</p></li>
         </ol>
 
       </div>

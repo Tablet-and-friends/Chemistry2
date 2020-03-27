@@ -247,3 +247,8 @@ nav p{
   margin-bottom: 20px;
   width:50%;
 }
+
+.group{
+  display: block;
+  margin:auto;
+}

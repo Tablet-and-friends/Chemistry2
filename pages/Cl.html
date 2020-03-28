@@ -30,56 +30,55 @@
                 </ul>
             </li>
             <li><a class = "top" href="#elements">Елементи</a></li>
-            <li><a class = "top" href="#about">Създатели</a></li>
+            <li><a class = "top" href="creators.html">Създатели</a></li>
         </ul>
         <p>ХИМИЯ</p >
-        <div class="s">
+          <div class="s">
+             <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
 
-            <input type="text" placeholder="Search for an element.." value=""  onblur="this.setAttribute('value',this.value); check(this.value);" onblur="check(this.value);" onblur="closeSearch();">
-
-            <div class="res">
-            <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
-            <div id="Mg"><a href="pages/Mg.html">Магнезий (Mg)</a></div>
-            <div id="Ca"><a href="pages/Ca.html">Калций (Ca)</a></div>
-            <div id="Sr"><a href="pages/Sr.html">Стронций (Sr)</a></div>
-            <div id="Ba"><a href="pages/Ba.html">Барий (Ba)</a></div>
-            <div id="B"><a href="pages/B.html">Бор (B)</a></div>
-            <div id="Al"><a href="pages/Al.html">Алуминий (Al)</a></div>
-            <div id="Ga"><a href="pages/Ga.html">Галий (Ga)</a></div>
-            <div id="In"><a href="pages/In.html">Индий (In)</a></div>
-            <div id="C"><a href="pages/C.html">Въглерод (C)</a></div>
-            <div id="Si"><a href="pages/Si.html">Силиций (Si)</a></div>
-            <div id="Ge"><a href="pages/Ge.html">Германий (Ge)</a></div>
-            <div id="Sn"><a href="pages/Sn.html">Калай (Sn)</a></div>
-            <div id="N"><a href="pages/N.html">Азот (N)</a></div>
-            <div id="P"><a href="pages/P.html">Фосфор (P)</a></div>
-            <div id="As"><a href="pages/As.html">Арсен (As)</a></div>
-            <div id="Sb"><a href="pages/Sb.html">Антимон (Sb)</a></div>
-            <div id="O"><a href="pages/O.html">Кислород (O)</a></div>
-            <div id="S"><a href="pages/S.html">Сяра (S)</a></div>
-            <div id="Se"><a href="pages/Se.html">Селен (Se)</a></div>
-            <div id="Te"><a href="pages/Te.html">Телур (Te)</a></div>
-            <div id="F"><a href="pages/F.html">Флуор (F)</a></div>
-            <div id="Cl"><a href="pages/Cl.html">Хлор (Cl)</a></div>
-            <div id="Br"><a href="pages/Br.html">Бром (Br)</a></div>
-            <div id="I"><a href="pages/I.html">Йод (I)</a></div>
-            </div>
-        </div>
+             <div class="res">
+             <div id="Be"><a href="Be.html">Берилий (Be)</a></div>
+             <div id="Mg"><a href="Mg.html">Магнезий (Mg)</a></div>
+             <div id="Ca"><a href="Ca.html">Калций (Ca)</a></div>
+             <div id="Sr"><a href="Sr.html">Стронций (Sr)</a></div>
+             <div id="Ba"><a href="Ba.html">Барий (Ba)</a></div>
+             <div id="B"><a href="B.html">Бор (B)</a></div>
+             <div id="Al"><a href="Al.html">Алуминий (Al)</a></div>
+             <div id="Ga"><a href="Ga.html">Галий (Ga)</a></div>
+             <div id="In"><a href="In.html">Индий (In)</a></div>
+             <div id="C"><a href="C.html">Въглерод (C)</a></div>
+             <div id="Si"><a href="Si.html">Силиций (Si)</a></div>
+             <div id="Ge"><a href="Ge.html">Германий (Ge)</a></div>
+             <div id="Sn"><a href="Sn.html">Калай (Sn)</a></div>
+             <div id="N"><a href="N.html">Азот (N)</a></div>
+             <div id="P"><a href="P.html">Фосфор (P)</a></div>
+             <div id="As"><a href="As.html">Арсен (As)</a></div>
+             <div id="Sb"><a href="Sb.html">Антимон (Sb)</a></div>
+             <div id="O"><a href="O.html">Кислород (O)</a></div>
+             <div id="S"><a href="S.html">Сяра (S)</a></div>
+             <div id="Se"><a href="Se.html">Селен (Se)</a></div>
+             <div id="Te"><a href="Te.html">Телур (Te)</a></div>
+             <div id="F"><a href="F.html">Флуор (F)</a></div>
+             <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
+             <div id="Br"><a href="Br.html">Бром (Br)</a></div>
+             <div id="I"><a href="I.html">Йод (I)</a></div>
+             </div>
+         </div>
     </nav>
     <div class="slide-nav" id = "slide-menu">
         <a href="#" class = "close-slide" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#">Химични Свойства</a>
-        <a href="#">Физични Свойства</a>
-        <a href="#">Получаване</a>
-        <a href="#">Употреба</a>
+        <a href="#physical">Физични Свойства</a>
+        <a href="#chemical">Химични Свойства</a>
+        <a href="#extraction">Получаване</a>
+        <a href="#use">Употреба</a>
     </div>
 
 
     <div class="main" id = "main-content">
       <h1>Хлор (Cl)</h1>
-      <img src="..\assets\VIIA\Cl_Picture.jpg" alt="снимка на хлор" class="pic" style="display:inline;">
+      <img src="..\assets\VIIA\Cl_Picture.jpg" alt="снимка на хлор" class="pic" style="display:inline;width:500px;">
       <img src="..\assets\VIIA\Cl-sf.jpg" alt="кристална решетка" style="margin:0px 80px;" class="pic">
       <div class="ElementInfo">
         <p style="margin-bottom:30px;">Хлорът е член на халогенното семейство. Халогените са елементите, съставляващи седма "А" група от периодичната таблица. Те включват флуор, бром, йод и астатин. Хлорът е силно реактивен, класирайки се само под флуора по своята химическа активност.
@@ -87,9 +86,9 @@
           <img src="..\assets\VIIA\Cl_Structure.png" alt="атомна структура на хлор" class="Element" >
 
         <ol>
-          <li>Физични свойства <p style="margin:30px 0px;">
+          <li id="physical">Физични свойства <p style="margin:30px 0px;">
 Хлорът е плътен газ с плътност 3,21 грама на литър. За сравнение, плътността на въздуха е 1,29 грама на литър. Кондензира се при температура от -34.05 ° C (-29.29 ° F) и от течност до твърдо вещество при -101.00 ° C (-149.80 ° F). Газът е разтворим във вода.</p></li>
-          <li>Химични свойства: <p style="margin:30px 0px;">
+          <li id="chemical">Химични свойства: <p style="margin:30px 0px;">
 Хлорът е много активен елемент. Той се комбинира с всички елементи с изключение на благородните газове. Реакцията между хлора и други елементи често може да бъде бурна. Например хлорът реагира експлозивно с водорода, за да образува хлороводород:
 <img src="..\info\Reactions\H2+Cl2.png" alt="reaction" class="Reaction">
 Хлорът не изгаря, но подобно на кислорода, той помага на други вещества да се изгарят. Той е силно окисляващо средство (химическо вещество, което се отдава или поема електрони от друго вещество).
@@ -100,17 +99,19 @@
 <p style="margin-bottom:30px;">Взаимодействие с основи:</p>
 <img src="..\info\Reactions\KOH+Cl.png" alt="reaction" class="Reaction">
                     </li>
-          <li>В природата:<p style="margin:30px 0px;">
+
+    <li id="extraction">Получаване:<p style="margin:30px 0px;">
+    <img src="..\info\Reactions\HCl.png" alt="reaction" class="Reaction"
+    style="float:right">
+  Хлорът се получава чрез преминаване на електрически ток през воден разтвор на натриев хлорид или чрез разтопен (разтопен) натриев хлорид.</p>
+  <p style="margin:30px 0px;">Този процес е един от най-важните търговски процеси в индустрията. В реакцията също се образува водороден газ (H2).</p>
+
+                  </li>
+
+          <li id="use">В природата:<p style="margin:30px 0px;">
 Хлорът се среща обикновено както в земната кора, така и в морската вода. Неговото изобилие в земята е около 100 до 300 части на милион. Съдържанието му в морската вода е около 2 процента. Най-често срещаното съединение на хлор в морската вода е натриевият хлорид. По-малки количества калиев хлорид се срещат и в морската вода.
 Най-често срещаните минерали на хлора са халит или каменна сол (NaCl), силвит (KCl) и камалит (KCl MgCl 2).</p></li>
 
-          <li>Получаване:<p style="margin:30px 0px;">
-            <img src="..\info\Reactions\HCl.png" alt="reaction" class="Reaction"
-            style="float:right">
-Хлорът се получава чрез преминаване на електрически ток през воден разтвор на натриев хлорид или чрез разтопен (разтопен) натриев хлорид.</p>
-<p style="margin:30px 0px;">Този процес е един от най-важните търговски процеси в индустрията. В реакцията също се образува водороден газ (H2).</p>
-
-                  </li>
 
           <li>Въздействия върху здравето <p style="margin:30px 0px;">
 Хлорният газ е изключително токсичен. В малки дози дразни носа и гърлото. Човек, изложен на хлор, може да почувства кихане, течащ нос и зачервени очи.

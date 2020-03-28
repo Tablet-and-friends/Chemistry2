@@ -44,6 +44,17 @@ nav ul li a{
   border-style: solid;
   transition: color 0.5s,border linear 0.5s;
 }
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 100px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    background-image: -webkit-linear-gradient(90deg,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 nav ul li ul{
     margin-top:60px;
 
@@ -121,7 +132,7 @@ nav p{
    position: relative;
      padding: 12px;
      background-color: #fecf9d;
-     /*border: 3px solid rgb(255, 255, 146);*/
+     border: 3px solid rgb(255, 255, 146);
      margin-top: 8px;
      margin-right: 16px;
      height: 15px;
@@ -211,6 +222,7 @@ nav p{
 .main{
   margin-top:150px;
   margin-left: 0px;
+  padding-left: 50px;
   transition: 0.5s;
 }
 .main ul{
@@ -234,4 +246,9 @@ nav p{
   margin-top: 30px;
   margin-bottom: 20px;
   width:50%;
+}
+
+.group{
+  display: block;
+  margin:auto;
 }

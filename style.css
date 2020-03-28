@@ -227,7 +227,7 @@ nav p{
 }
 .main ul{
   width: 80%;
-  list-style-image: url('assets/kolba.png');
+  list-style: none;
   list-style-position: inside;
 }
 .main ol{

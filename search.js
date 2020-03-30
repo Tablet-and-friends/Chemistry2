@@ -149,7 +149,7 @@ var p=[
 "assets/IIIA/B_Picture.jpg",
 "assets/IIIA/Ga_Picture.jpg",
 "assets/IIIA/In_Picture.jpg",
-"assets/IIIA/Tl_Picture.jpg",
+"assets/IIIA/Ti_Picture.jpg",
 "assets/IVA/C_Picture.jpg",
 "assets/IVA/Ge_Picture.jpg",
 "assets/IVA/Si_Picture.jpg",
@@ -166,22 +166,24 @@ var p=[
 "assets/VIIA/Cl_Picture.jpg",
 "assets/VIIA/F_Picture.jpg",
 "assets/VIIA/I_Picture.jpg",
+"assets/IVA/Bi_Picture.jpg",
+"assets/VA/Pb_Picture.jpg",
       ];
 var n=[
-  "Барий","Берилий","Калций","Магнезий","Стронций","Алуминий","Бор","Галий","Индий","Талий","Въглерод","Германий","Силиций","Калай","Арсен","Азот","Фосфор","Антимон","Кислород","Сяра","Селен","Телур","Бром","Хлор","Флуор","Йод"
+  "Барий","Берилий","Калций","Магнезий","Стронций","Алуминий","Бор","Галий","Индий","Талий","Въглерод","Германий","Силиций","Калай","Арсен","Азот","Фосфор","Антимон","Кислород","Сяра","Селен","Телур","Бром","Хлор","Флуор","Йод","Бисмут","Олово"
 ];
 
     document.getElementById("scroll").scrollLeft=446;
-      var r=Math.floor(Math.random()*25);
+      var r=Math.floor(Math.random()*27);
       var rndPos=Math.floor(Math.random()*2);
       if (rndPos>0) {
         document.getElementById("a1").innerHTML =n[r];
         document.getElementById("a1").setAttribute("data-pos",r);
         var secP;
         do {
-          secP=Math.floor(Math.random()*3);
+          secP=Math.floor(Math.random()*27);
             }
-while (secP==r);
+        while (secP==r);
         document.getElementById("a2").innerHTML =n[secP];
         document.getElementById("a2").setAttribute("data-pos",secP);
       }
@@ -190,7 +192,7 @@ while (secP==r);
         document.getElementById("a2").setAttribute("data-pos",r);
         var secP;
         do {
-          secP=Math.floor(Math.random()*25);
+          secP=Math.floor(Math.random()*27);
             }
 while (secP==r);
         document.getElementById("a1").innerHTML =n[secP];

@@ -248,7 +248,7 @@ nav p{
   margin: auto;
   margin-top: 30px;
   margin-bottom: 20px;
-  width:50%;
+  width:70%;
 }
 
 .group{
@@ -274,6 +274,10 @@ div::-webkit-scrollbar-thumb:hover
 
 div::-webkit-scrollbar-track {
   background:#fffecc;
+}
+
+div::-webkit-scrollbar-corner {
+  display:none;
 }
 
 #demo{

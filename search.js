@@ -96,3 +96,106 @@ function closeSearch(){
   document.getElementById("Br").style.display = "none";
   document.getElementById("I").style.display = "none";
 }
+
+function checkGame(){
+  var elmnt = document.getElementById("scroll");
+  var x = elmnt.scrollLeft;
+var img=document.getElementById("q");
+  var a1=document.getElementById("a1");
+var a2=document.getElementById("a2");
+/*document.getElementById ("demo").style.visibility ="visible";*/
+if (x>430&&x<460) {
+  document.getElementById ("demo").innerHTML ="Кой е този елемент?";
+  document.getElementById ("demo").style.color ="blue";
+  return;
+}
+if (a1.getAttribute("data-pos")==q.getAttribute("data-pos"))
+{
+  /*document.getElementById ("demo").innerHTML=a1.getAttribute("data-pos");*/
+  if (x<892/2) {
+    document.getElementById ("demo").innerHTML ="Ура! Да живее трудът!";
+    document.getElementById ("demo").style.color ="green";
+  }
+  else {
+    document.getElementById ("demo").innerHTML ="Грешка ;(";
+    document.getElementById ("demo").style.color ="red";
+  }
+  /*document.getElementById ("demo").innerHTML =x;*/
+  return;
+}
+else {
+  if (x>892/2) {
+    document.getElementById ("demo").innerHTML ="Ура! Да живее трудът!";
+    document.getElementById ("demo").style.color ="green";
+  }
+  else {
+    document.getElementById ("demo").innerHTML ="Грешка ;(";
+    document.getElementById ("demo").style.color ="red";
+  }
+  /*document.getElementById ("demo").innerHTML =x;*/
+  return;
+}
+
+}
+
+function shufflePics(){
+var p=[
+"assets/IIA/Ba_Picture.jpg",
+"assets/IIA/Be_Picture.jpg",
+"assets/IIA/Ca_Picture.jpg",
+"assets/IIA/Mg_Picture.jpg",
+"assets/IIA/Sr_Picture.jpg",
+"assets/IIIA/Al_Picture.jpg",
+"assets/IIIA/B_Picture.jpg",
+"assets/IIIA/Ga_Picture.jpg",
+"assets/IIIA/In_Picture.jpg",
+"assets/IIIA/Tl_Picture.jpg",
+"assets/IVA/C_Picture.jpg",
+"assets/IVA/Ge_Picture.jpg",
+"assets/IVA/Si_Picture.jpg",
+"assets/IVA/Sn_Picture.jpg",
+"assets/VA/As_Picture.jpg",
+"assets/VA/N_Picture.jpg",
+"assets/VA/P_Picture.png",
+"assets/VA/Sb_Picture.jpg",
+"assets/VIA/O_Picture.jpg",
+"assets/VIA/S_Picture.jpg",
+"assets/VIA/Se_Picture.jpg",
+"assets/VIA/Te_Picture.jpg",
+"assets/VIIA/Br_Picture.png",
+"assets/VIIA/Cl_Picture.jpg",
+"assets/VIIA/F_Picture.jpg",
+"assets/VIIA/I_Picture.jpg",
+      ];
+var n=[
+  "Барий","Берилий","Калций","Магнезий","Стронций","Алуминий","Бор","Галий","Индий","Талий","Въглерод","Германий","Силиций","Калай","Арсен","Азот","Фосфор","Антимон","Кислород","Сяра","Селен","Телур","Бром","Хлор","Флуор","Йод"
+];
+
+    document.getElementById("scroll").scrollLeft=446;
+      var r=Math.floor(Math.random()*25);
+      var rndPos=Math.floor(Math.random()*2);
+      if (rndPos>0) {
+        document.getElementById("a1").innerHTML =n[r];
+        document.getElementById("a1").setAttribute("data-pos",r);
+        var secP;
+        do {
+          secP=Math.floor(Math.random()*3);
+            }
+while (secP==r);
+        document.getElementById("a2").innerHTML =n[secP];
+        document.getElementById("a2").setAttribute("data-pos",secP);
+      }
+      else {
+        document.getElementById("a2").innerHTML =n[r];
+        document.getElementById("a2").setAttribute("data-pos",r);
+        var secP;
+        do {
+          secP=Math.floor(Math.random()*25);
+            }
+while (secP==r);
+        document.getElementById("a1").innerHTML =n[secP];
+        document.getElementById("a1").setAttribute("data-pos",secP);
+      }
+      document.getElementById("q").setAttribute("data-pos",r);
+      return p[r];
+}

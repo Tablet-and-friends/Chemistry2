@@ -19,14 +19,17 @@ changeDisplay("Бор B",5,val,"B");
 changeDisplay("Алуминий Al",13,val,"Al");
 changeDisplay("Галий Ga",31,val,"Ga");
 changeDisplay("Индий In",49,val,"In");
+changeDisplay("Талий Ti",81,val,"Ti");
 changeDisplay("Въглерод C",6,val,"C");
 changeDisplay("Силиций Si",14,val,"Si");
 changeDisplay("Германий Ge",32,val,"Ge");
 changeDisplay("Калай Sn",50,val,"Sn");
+changeDisplay("Олово Pb",82,val,"Pb");
 changeDisplay("Азот N",7,val,"N");
 changeDisplay("Фосфор P",15,val,"P");
 changeDisplay("Арсен As",33,val,"As");
 changeDisplay("Антимон Sb",51,val,"Sb");
+changeDisplay("Бисмут Bi",83,val,"Bi");
 changeDisplay("Кислород O",8,val,"O");
 changeDisplay("Сяра S",16,val,"S");
 changeDisplay("Селен Se",34,val,"Se");
@@ -35,6 +38,7 @@ changeDisplay("Флуор F",9,val,"F");
 changeDisplay("Хлор Cl",17,val,"Cl");
 changeDisplay("Бром Br",35,val,"Br");
 changeDisplay("Йод I",53,val,"I");
+
 }
 
 /*function changeDisplay2(el,s,id) {
@@ -79,14 +83,17 @@ function closeSearch(){
   document.getElementById("Al").style.display = "none";
   document.getElementById("Ga").style.display = "none";
   document.getElementById("In").style.display = "none";
+  document.getElementById("Ti").style.display = "none";
   document.getElementById("C").style.display = "none";
   document.getElementById("Si").style.display = "none";
   document.getElementById("Ge").style.display = "none";
   document.getElementById("Sn").style.display = "none";
+  document.getElementById("Pb").style.display = "none";
   document.getElementById("N").style.display = "none";
   document.getElementById("P").style.display = "none";
   document.getElementById("As").style.display = "none";
   document.getElementById("Sb").style.display = "none";
+  document.getElementById("Bi").style.display = "none";
   document.getElementById("O").style.display = "none";
   document.getElementById("S").style.display = "none";
   document.getElementById("Se").style.display = "none";

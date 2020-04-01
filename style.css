@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow:visible;
 }
 
 body{
@@ -195,13 +196,13 @@ nav p{
     margin: auto;
   }
 
-  .Element{
-    float: right;/*
-    display: inline-block;*/
+  /*.Element{
+    float: right;
+    display: inline-block;
     width: 25%;
     margin:20px;
-    /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
-  }
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+  }*/
 
 .Element:hover {
   -webkit-transform: rotate(3600deg);
@@ -225,7 +226,8 @@ nav p{
   margin-left: 0px;
   padding-left: 50px;
   transition: 0.5s;
-  overflow-x: hidden;
+  position:relative;
+  text-overflow:inherit;
 }
 .main ul{
   width: 80%;
@@ -233,7 +235,7 @@ nav p{
   list-style-position: inside;
 }
 .main ol{
-  width: 80%;
+  width: 60%;
   list-style-position: inside;
 }
 .main li{
@@ -242,14 +244,40 @@ nav p{
   margin:10px;
 }
 
+.configuration{
+  font-size: 23px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 .Reaction{
   font-weight: bold;
   font-size:25px;
   display: block;
-  margin: auto;
-  margin-top: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  width:70%;
+  width:90%;
+}
+.Structures{
+  float: right;
+  margin-right: 100px;
+}
+.Element{
+    float: right;/*
+    display: inline-block;/
+    width: 30s%;
+    margin-right :100px;
+    /-webkit-transition: -webkit-transform .8s ease-in-out;*/
+
+  }
+
+*{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .group{

@@ -88,6 +88,9 @@ nav ul li ul li:hover a{
     color:#d7f547;
     text-decoration: underline;
 }
+ol li{
+  list-style-type: none;
+}
 
 /* Change the color of links on hover */
 nav li:hover .top, nav li:hover .active{
@@ -205,15 +208,13 @@ nav p{
   .Element{
     float: right;/*
     display: inline-block;*/
-    width: 30%;
-    margin-right :60px;
+    width: 30s%;
+    margin-right :10px;
     /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
+
   }
 
-.Element:hover {
-  -webkit-transform: rotate(3600deg);
-    -webkit-transition-duration: 60s;
-}
+
 
 .El_picture{
   float: right;
@@ -235,7 +236,8 @@ nav p{
   margin-left: 0px;
   padding-left: 50px;
   transition: 0.5s;
-  
+  text-overflow: inherit;
+  position: relative;
 }
 .main ul{
   width: 80%;
@@ -256,12 +258,19 @@ nav p{
   font-weight: bold;
   font-size:25px;
   display: block;
-  margin: auto;
-  margin-top: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  width:50%;
+  width:90%;
 }
 
+.picture_el{
+  float: left;
+}
+.Structures{
+  float: right;
+  margin-right: 100px;
+}
 .group{
   display: block;
   margin:auto;

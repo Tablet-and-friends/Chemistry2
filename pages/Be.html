@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="..\search.js"></script>
 
+
 </head>
 
 <body>
@@ -21,7 +22,6 @@
             <li><a class="active" href="../Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="IA.html">IA</a></li>
                     <li><a href="IIA.html">IIA</a></li>
                     <li><a href="IIIA.html">IIIA</a></li>
                     <li><a href="IVA.html">IVA</a></li>
@@ -73,10 +73,13 @@
         <a href="#" class = "close-slide" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#physical">Физични Свойства</a>
-        <a href="#chemical">Химични Свойства</a>
-        <a href="#extraction">Получаване</a>
-        <a href="#use">Употреба</a>
+        <a href="#elek" onclick="closeSlideMenu()">Електронна конфигурация</a>
+        <a href="#physical" onclick="closeSlideMenu()">Физични Свойства</a>
+        <a href="#chemical" onclick="closeSlideMenu()">Химични Свойства</a>
+        <a href="#color" onclick="closeSlideMenu()">Цвят на пламъка</a>
+        <a href="#extraction" onclick="closeSlideMenu()">Получаване</a>
+        <a href="#use" onclick="closeSlideMenu();" >Значение и употреба</a>
+
     </div>
 
 
@@ -84,17 +87,19 @@
       <h1>Берилий (Be)</h1>
 
       <div class="ElementInfo">
-        <img src="..\assets\IIA\Be_Picture.jpg" alt="снимка на берилий" class="picture" style="margin: 0px 60px ";>
-          <img src="..\assets\IIA\Be-sf.jpg" alt="кристална решетка" class="picture" style="margin: 0px 60px ";>
-        <p>Берилият е от втора "А" група на периодичната система и принадлежи към алкалоземните метали, които включват елементите Магнезий (Mg), Калций (Ca), Стронций (Sr), Барий (Ba) и Радий (Ra). </p>
+
+
+        <p ><img src="..\assets\IIA\Be_Picture.jpg" alt="снимка на берилий" class="picture_el">
+          Берилият е от втора "А" група на периодичната система и принадлежи към алкалоземните метали, които включват елементите Магнезий (Mg), Калций (Ca), Стронций (Sr), Барий (Ba) и Радий (Ra). </p>
+  <img id="img" src="..\assets\IIA\Be_Structure.png" alt="атомна структура на берилий " class="Element" >
         <ol>
-          <li style="font-size: 40px";>Електронна конфигурация</li>
+          <li id="elek" style="font-size: 40px";>Електронна конфигурация</li>
           <div class="configuration"><sub>4</sub>Be-1s<sup>2</sup>2s<sup>2</sup>
             </div>
-          <li style="font-size: 40px";>Физични свойства</li>
-            <p><img src="..\assets\IIA\Be_Structure.png" alt="атомна структура на берилий " class="Element" style="float: right;">
-              Берилият е светлосив метал. Устойчив е на корозия. Берилият е изключителен лек, но твърд метал, който е устойчив на въздуха. Притежава метален блясък подобно на останалите метали. Берилият е най-лекият член на семейството на алкалоземни метали. Интересното е, че берилият е прозрачен за рентгенови лъчи.</p>
-          <li style="font-size: 40px";>Химични свойства</li>
+          <li id="physical"style="font-size: 40px; padding-top:70px; margin-top: -70px;">Физични свойства<p>
+              Берилият е светлосив метал. Устойчив е на корозия. Берилият е изключителен лек, но твърд метал, който е устойчив на въздуха. Притежава метален блясък подобно на останалите метали. Берилият е най-лекият член на семейството на алкалоземни метали. Интересното е, че берилият е прозрачен за рентгенови лъчи.</p></li>
+
+          <li id="chemical"style="font-size: 40px";>Химични свойства
             <p>Берилият има само един устойчив изотоп, който се среща в природата. Металният берилий не реагира изцяло с въздуха, защото се покрива с оксидна коричка. Освен това тя пречи и на реакцията му с вода, която е невъзможна. Прахообразният берилий гори на въздуха като се получава смес от берилиев оксид и берилиев нитрид.</p>
             <div class="Reaction">2Be + O<sub>2</sub> &rarr; 2BeO
             </div>
@@ -104,6 +109,9 @@
             <p>Берилиев нитрид може да се получи след директно взаимодействие на берилий и азот при температура 1100&deg;C</p>
               <div class="Reaction">3Be + N<sub>2</sub> &rarr; Be<sub>3</sub>Cl<sub>2</sub>
               </div>
+            </ol>
+            <img src="..\assets\IIA\Be-sf.jpg" alt="кристална решетка" class="Structures" >
+            <ol><li>
             <p>Берилият реагира и с кислелини</p>
               <div class="Reaction">Be + H<sub>2</sub>SO<sub>4</sub> &rarr; BeSO<sub>4</sub> + H<sub>2</sub>
               </div>
@@ -112,23 +120,20 @@
               </div>
             <p>Взаимодействие с водород</p>
               <div class="Reaction">Be + H<sub>2</sub> &rarr; BeH<sub>2</sub>
-              </div>
-          <li style="font-size: 40px">Цвят на пламъка:</li>
-
-
-          <p class="configuration"> Цветът на пламъка на берилия е бял.</p>
-          <p><li style="font-size: 40px";>Получаване
-          <p>Берилий се добива предимно от берил, като в процеса на преработване се получават берилиев хлорид и флуорид , като впоследствие флуорида се редуцира с магнезий при температура 1300&deg;C в графитни тигели(пещи). </p></li>
-      <p class="Reaction" style="margin-left: 40px";>BeF<sub>2</sub> + Mg &rarr; Be + MgF<sub>2</sub></p>
-      <li style="font-size: 40px">Значение и употреба</li>
+              </div></li>
+          <li id="color" style="font-size: 40px; padding-top:70px; margin-top: -70px;">Цвят на пламъка:
+          <p class="configuration"> Цветът на пламъка на берилия е бял.</p></li>
+          <li id="extraction" style="font-size: 40px";>Получаване
+          <p>Берилий се добива предимно от берил, като в процеса на преработване се получават берилиев хлорид и флуорид , като впоследствие флуорида се редуцира с магнезий при температура 1300&deg;C в графитни тигели(пещи). </p>
+      <p class="Reaction" style="margin-left: 40px";>BeF<sub>2</sub> + Mg &rarr; Be + MgF<sub>2</sub></p></li>
+      <li id="use" style="font-size: 40px">Значение и употреба</li>
           <p ><img src="..\assets\IIA\4-berilii.png" alt="фрамар берилий"   class="El_picture">
           Използва се предимно под формата на сплави в много области. От космически технологии до електрониката и промишлеността, където е необходим метал, който не се намагнитизира и притежава ниска атомна маса. Също така се използва и при рентгеновата апаратура. Този елемент се използва и в ядрените технологии, като в това число и в оръжията за масово унищожение.
           Берилият е много токсичен метал. Особено опасно е в прахообразна форма. Ефектите от вдишването на прах от берилий могат да бъдат остри или хронични. Острите ефекти са тези, които се появяват много бързо в резултат на големи експозиции. Хроничните ефекти са тези, които се проявяват през много дълги периоди от време в резултат на много по-малки експозиции. Острите ефекти от вдишването на прах от берилий включват симптоми на пневмония, които могат да доведат до смърт за кратко време. Хроничните ефекти включват заболявания на дихателната система (гърлото и белите дробове), като бронхит и рак на белия дроб.</p>
-
 </ol>
 
       </div>
     </div>
-
+<script>rotateAnimation("img",20);</script>
 </body>
 </html>

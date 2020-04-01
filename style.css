@@ -10,6 +10,13 @@ body{
   overflow-x: hidden;
 }
 
+.configuration{
+  font-size: 23px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 nav {
    /* background-color: #333; */
    background-color: #d97a15;
@@ -81,6 +88,9 @@ nav ul li ul li a{
 nav ul li ul li:hover a{
     color:#d7f547;
     text-decoration: underline;
+}
+ol li{
+  list-style-type: none;
 }
 
 /* Change the color of links on hover */
@@ -196,19 +206,20 @@ nav p{
     margin: auto;
   }
 
-  /*.Element{
-    float: right;
-    display: inline-block;
-    width: 25%;
-    margin:20px;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-  }*/
+  .Element{
+    float: right;/*
+    display: inline-block;*/
+    width: 30s%;
+    margin-right :10px;
+    /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
 
-.Element:hover {
-  -webkit-transform: rotate(3600deg);
-    -webkit-transition-duration: 60s;
+  }
+
+
+
+.El_picture{
+  float: right;
 }
-
 .ElementInfo p{
   float:left;
   width: 100%;
@@ -264,14 +275,6 @@ nav p{
   float: right;
   margin-right: 100px;
 }
-.Element{
-    float: right;/*
-    display: inline-block;/
-    width: 30s%;
-    margin-right :100px;
-    /-webkit-transition: -webkit-transform .8s ease-in-out;*/
-
-  }
 
 *{
   -webkit-user-select: none; /* Safari */
@@ -280,6 +283,13 @@ nav p{
   user-select: none; /* Standard */
 }
 
+.picture_el{
+  float: left;
+}
+.Structures{
+  float: right;
+  margin-right: 100px;
+}
 .group{
   display: block;
   margin:auto;

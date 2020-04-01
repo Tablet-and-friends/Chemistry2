@@ -17,10 +17,9 @@
             </a>
         </span>
         <ul>
-            <li><a class="active" href="Home.html">Таблица</a></li>
+            <li><a class="top" href="../Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="IA.html">IA</a></li>
                     <li><a href="IIA.html">IIA</a></li>
                     <li><a href="IIIA.html">IIIA</a></li>
                     <li><a href="IVA.html">IVA</a></li>
@@ -29,7 +28,7 @@
                     <li><a href="VIIA.html">VIIA</a></li>
                 </ul>
             </li>
-            <li><a class = "top" href="../t.html">Игра</a></li>
+            <li><a class = "top" href="../t.html">Игри</a></li>
             <li><a class = "top" href="creators.html">Създатели</a></li>
         </ul>
         <p>ХИМИЯ</p >
@@ -62,32 +61,81 @@
              <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
              <div id="Br"><a href="Br.html">Бром (Br)</a></div>
              <div id="I"><a href="I.html">Йод (I)</a></div>
+             <div id="Pb"><a href="Pb.html">Олово (Pb)</a></div>
+             <div id="Bi"><a href="Bi.html">Бисмут (Bi)</a></div>
+             <div id="Ti"><a href="Ti.html">Талий (Ti)</a></div>
              </div>
          </div>
     </nav>
-
     <div class="slide-nav" id = "slide-menu">
         <a href="#" class = "close-slide" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#physical">Физични Свойства</a>
-        <a href="#chemical">Химични Свойства</a>
-        <a href="#extraction">Получаване</a>
-        <a href="#use">Употреба</a>
+        <a href="#elek" onclick="closeSlideMenu()">Електронна конфигурация</a>
+        <a href="#physical" onclick="closeSlideMenu()">Физични Свойства</a>
+        <a href="#chemical" onclick="closeSlideMenu()">Химични Свойства</a>
+        <a href="#color" onclick="closeSlideMenu()">Цвят на пламъка</a>
+        <a href="#extraction" onclick="closeSlideMenu()">Получаване</a>
+        <a href="#use" onclick="closeSlideMenu();" >Значение и употреба</a>
     </div>
 
 
-    <div class="main" id = "main-content">      <h1>Индий (In)</h1>
-      <img src="..\assets\IIIA\In_Picture.jpg" alt="снимка на индий">
-      <div >
-        <img src="..\assets\IIIA\In-sf.jpg" alt="кристална решетка">
-      </div>
+  <div class="main" id = "main-content">     <h1>Индий (In)</h1>
+
+
       <div class="ElementInfo">
-        <p>Cl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="..\assets\IIIA\In_Structure.png" alt="атомна структура на индий " class="Element">
+        <p><img src="..\assets\IIIA\In_Picture.jpg" alt="снимка на индий" class="picture_el">Индият е четвъртият елемент от трета "А" група на периодичната система, позната още като "земната група" или "борната група". Тя включва още
+        елементите Бор (B), Алуминий (Al), Галий (Ga) и Талий (Ti).</p>
+        <img id="img" src="..\assets\IIIA\In_Structure.png" alt="атомна структура на индий " class="Element">
+        <ol>
+          <li id="elek" style="font-size: 40px;">Електронна конфигурация</li>
+          <div class="configuration">
+              <sub>49</sub>In-1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>10</sup>4p<sup>6</sup>5s<sup>2</sup>4d<sup>10</sup>5p<sup>1</sup>
+          </div>
+          <li id="physical" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Физични свойства
+          <p>Индият има метален характер. Той е сребристо-бял метал с ниска точка на топене – 156,5985&deg;С. От металите по-ниска точка на топене имат само живак, галий и по-голямата част алкални метали. Металът е течен в много голяма област – почти до 2000 К. Течният индий оставя траен тънък филм (мокрене) върху стъкло. Същото качество притежава и сходният с него галий.
+          Индият притежава висока пластичност и малка твърдост. Затова е възможно индият да се среже с нож като натрий. Същевременно той оставя видима следа върху хартия. Особеност на индия, което му придава прилика с калая, са характерните шумове, които могат да се чуят при огъването му.</p></li>
+          <li id="chemical" style="font-size: 40px; ">Химични свойства</li>
+          <p>Взаимодействие на индий с халогенни елементи</p>
+          <div class="Reaction">
+          2In + 3Br<sub>2</sub> &rarr; 2InBr<sub>3</sub>
+          </div>
+        </ol>
+        <div >
+          <img src="..\assets\IIIA\In-sf.jpg" alt="кристална решетка" class="Structures">
+        </div>
+        <ol><li>
+          <p>Взаимодействие на индий с киселини</p>
+          <div class="Reaction">
+            H<sub>2</sub>SO<sub>4</sub> + In &rarr; H<sub>2</sub>O + S + InSO<sub>4</sub>
+          </div>
+          <p>Взаимодействие на индий с кислород</p>
+          <div class="Reaction">
+            4In + O<sub>2</sub> &rarr; 2In<sub>2</sub>O<sub>3</sub>
+          </div>
+          <p>Взаимодействие на индий с вода</p>
+          <div class="Reaction">
+              2In + 6H<sub>2</sub>O &rarr; 2In(OH)<sub>3</sub> + 3H<sub>2</sub>&uarr;
+          </div>
+          <p>Взаимодействие на индий с водород</p>
+          <div class="Reaction">
+          2In + 3H<sub>2</sub> &rarr; 2InH<sub>3</sub>
+        </div></li>
+          <li id="color" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Цвят на пламъка</li>
+          <p>Цветът на пламъка на индия е индиго или обикновено синьо.</p>
+          <li id="extraction" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Получаване</li>
+          <p>Индийът се получава в чистата му форма, като го отделя от цинка и други елементи в цинковите руди</p>
+          <li id="use" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Значение и употреба</li>
+          <p><img src="..\assets\IIIA\49-indii.png" alt="фрамар снимка" class="El_picture">Индият е многостранно използваем, но неговата употреба е ограничена от високата му цена и оскъдността му. Преобладаващата част от произведения индий не се използва като метал, а се преработва до редица съединения.
+          Mеталните елементи могат да бъдат предпазени чрез галванично отделено индиево покритие. Така се покриват елементи от стомана, олово и кадмий, за да се защитят от корозия, предизвикана от органични киселини и солни разтвори, и преди всичко от износване. Индиевите защитни покрития преди често са били използвани за плъзгащи лагери на автомобили и самолети. Покритите с индий повърхности притежават висок и равномерен коефициент на отражение за всички цветове и затова могат да се използват като огледала.
+          Поради високото сечение на захващане, както на бавни така и на бързи неутрони, индият се използва като съставна част на контролните пръти в атомните реактори. Индият е газово непроницаем и лесно се преоформя при ниски температури и поради тази причина се използва за така наречените индиеви уплътнители в криостатите.
+          Поради някои специфични свойства, индият се използва като припой за много материали. Така се преоформя при охлаждане само в ограничена степен. Това е важно при припояването на полупроводници за транзистори. Също така индий може да се използва за запояване на неметални изделия като стъкло и керамика.
+          Въпреки че не са известни токсични ефекти на индии, при опити с плъхове и зайци е установено, че индиевите атоми въздействат върху ембриона и оказват мутагенно въздействие.
+          Компактният индий е негорим. В раздробено състояние – като прах – е леснозапалим и гори за разлика от много други метали. Поради опасност от експлозия горящият индий не трябва да се залива с вода заради наличието на водород. Трябва да се третира с гасители за горящи метали </p>
+        </ol>
+
       </div>
     </div>
-
+<script>rotateAnimation("img",20);</script>
 </body>
 </html>

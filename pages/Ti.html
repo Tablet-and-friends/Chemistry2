@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="..\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Stalinist+One&display=swap" rel="stylesheet">
+    <title>Трета "А" група - Талий</title>
+    <script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="..\search.js"></script>
+</head>
+
+<body>
+    <nav>
+        <span class = "open-slide">
+            <a href="#" onclick = "openSlideMenu()">
+                <i class = "fas fa-bars"></i>
+            </a>
+        </span>
+        <ul>
+            <li><a class="top" href="../Home.html">Таблица</a></li>
+            <li><a class = "top" href="#groups">Групи</a>
+                <ul>
+                    <li><a href="IIA.html">IIA</a></li>
+                    <li><a href="IIIA.html">IIIA</a></li>
+                    <li><a href="IVA.html">IVA</a></li>
+                    <li><a href="VA.html">VA</a></li>
+                    <li><a href="VIA.html">VIA</a></li>
+                    <li><a href="VIIA.html">VIIA</a></li>
+                </ul>
+            </li>
+            <li><a class = "top" href="#elements">Игри</a></li>
+            <li><a class = "top" href="creators.html">Създатели</a></li>
+        </ul>
+        <p>ХИМИЯ</p >
+          <div class="s">
+             <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
+
+             <div class="res">
+             <div id="Be"><a href="Be.html">Берилий (Be)</a></div>
+             <div id="Mg"><a href="Mg.html">Магнезий (Mg)</a></div>
+             <div id="Ca"><a href="Ca.html">Калций (Ca)</a></div>
+             <div id="Sr"><a href="Sr.html">Стронций (Sr)</a></div>
+             <div id="Ba"><a href="Ba.html">Барий (Ba)</a></div>
+             <div id="B"><a href="B.html">Бор (B)</a></div>
+             <div id="Al"><a href="Al.html">Алуминий (Al)</a></div>
+             <div id="Ga"><a href="Ga.html">Галий (Ga)</a></div>
+             <div id="In"><a href="In.html">Индий (In)</a></div>
+             <div id="C"><a href="C.html">Въглерод (C)</a></div>
+             <div id="Si"><a href="Si.html">Силиций (Si)</a></div>
+             <div id="Ge"><a href="Ge.html">Германий (Ge)</a></div>
+             <div id="Sn"><a href="Sn.html">Калай (Sn)</a></div>
+             <div id="N"><a href="N.html">Азот (N)</a></div>
+             <div id="P"><a href="P.html">Фосфор (P)</a></div>
+             <div id="As"><a href="As.html">Арсен (As)</a></div>
+             <div id="Sb"><a href="Sb.html">Антимон (Sb)</a></div>
+             <div id="O"><a href="O.html">Кислород (O)</a></div>
+             <div id="S"><a href="S.html">Сяра (S)</a></div>
+             <div id="Se"><a href="Se.html">Селен (Se)</a></div>
+             <div id="Te"><a href="Te.html">Телур (Te)</a></div>
+             <div id="F"><a href="F.html">Флуор (F)</a></div>
+             <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
+             <div id="Br"><a href="Br.html">Бром (Br)</a></div>
+             <div id="I"><a href="I.html">Йод (I)</a></div>
+             <div id="Pb"><a href="Pb.html">Олово (Pb)</a></div>
+             <div id="Bi"><a href="Bi.html">Бисмут (Bi)</a></div>
+             <div id="Ti"><a href="Ti.html">Талий (Ti)</a></div>
+             </div>
+         </div>
+    </nav>
+    <div class="slide-nav" id = "slide-menu">
+        <a href="#" class = "close-slide" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#elek" onclick="closeSlideMenu()">Електронна конфигурация</a>
+        <a href="#physical" onclick="closeSlideMenu()">Физични Свойства</a>
+        <a href="#chemical" onclick="closeSlideMenu()">Химични Свойства</a>
+        <a href="#color" onclick="closeSlideMenu()">Цвят на пламъка</a>
+        <a href="#extraction" onclick="closeSlideMenu()">Получаване</a>
+        <a href="#use" onclick="closeSlideMenu();" >Значение и употреба</a>
+    </div>
+
+
+  <div class="main" id = "main-content">     <h1>Талий (Ti)</h1>
+
+
+      <div class="ElementInfo">
+        <p>  <img src="..\assets\IIIA\Ti_Picture.jpg" alt="снимка на индий" class="picture_el" style="width:15%;">Индият е четвъртият елемент от трета "А" група на периодичната система, позната още като "земната група" или "борната група". Тя включва още
+        елементите Бор (B), Алуминий (Al), Галий (Ga) и Талий (Ti).</p>
+          <img id="img" src="..\assets\IIIA\Ti_Structure.png" alt="атомна структура на индий " class="Element" style="width: 27%">
+        <ol>
+          <li id="elek" style="font-size: 40px;">Електронна конфигурация</li>
+          <div class="configuration">
+              <sub>88</sub>Ra-1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>10</sup>4p<sup>6</sup>5s<sup>2</sup>4d<sup>10</sup>5p<sup>6</sup>6s<sup>2</sup>4f<sup>14</sup>5d<sup>10</sup>6p<sup>6</sup>7s<sup>2</sup>
+          <li id="physical" style="font-size: 40px;  padding-top:70px; margin-top: -70px; margin-left: -50px;">Физични свойства
+          <p>Талия има метален химичен характер. Този мек сребристо бял ковък метал  и химически прилича на калая, но губи своя цвят при излагане на въздух.
+           Талият е известен и със своята висока токсичност. Той също така електро- и топлопроводим и е с ниска стойност на топене 304&deg;C.</p></li>
+          <li id="chemical" style="font-size: 40px; margin-left: -50px;">Химични свойства
+          <p>Талият взаимодейства и с халогенни елементи</p>
+          <div class="Reaction" style="margin-left:10%;">
+          2Ti + 3Cl<sub>2</sub> &rarr; 2InBr<sub>3</sub>
+        </div></li>
+      </ol>
+      <div >
+        <img src="..\assets\IIIA\Tl-sf.jpg" alt="кристална решетка" class="Structures">
+      </div>
+      <ol><li>
+          <p>Взаимодействие на талий с киселини</p>
+          <div class="Reaction" style="margin-left:10%;">
+            H<sub>2</sub>SO<sub>4</sub> + Ti &rarr; H<sub>2</sub>O + SO<sub>2</sub> + Ti<sub>2</sub>(SO4)<sub>3</sub>
+          </div>
+          <p>Взаимодействие на талий с кислород</p>
+          <div class="Reaction" style="margin-left:10%;">
+            Ti + O<sub>2</sub> &rarr; 2TiO<sub>2</sub>
+          </div>
+          <p>Взаимодействие на талий с вода</p>
+          <div class="Reaction" style="margin-left:10%;">
+              H<sub>2</sub>O + NaOH + Ti &rarr; Na<sub>2</sub>TiO<sub>3</sub> + H<sub>2</sub>&uarr;
+          </div></li>
+          <li id="color" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Цвят на пламъка
+          <p>Цветът на пламъка на талия е сребърно-бял.</p></li>
+          <li id="extraction" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Получаване</li>
+          <div class="Reaction" style="margin-left:10%;">
+          Mg + TiO<sub>2</sub> &rarr; MgO + Ti
+        </div>
+          <li id="use" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Значение и употреба</li>
+          <p><img src="..\assets\IIIA\81-talii.png" alt="фрамар снимка" class="El_picture">И талият, и неговите съединения са много токсични. Човек, изложен на елемента или неговите съединения за дълги периоди от време, развива слабост, болка в ръцете и краката и загуба на коса. Високата дозировка за кратко време води до различни симптоми. Тези симптоми включват гадене, повръщане, диария, болка в ръцете и краката, кома, конвулсии и дори смърт. Хората, които работят с талий, използват изключително внимание, за да не контактуват с материала.
+          Талият е твърде скъп, за да има много практически приложения. Има няколко изключения, обаче, които използват специални свойства на елементите и неговите съединения. Например, талий сулфид (Tl 2 S) понякога се използва в фотоклетки. Фотоклетките са устройства, които превръщат светлината в електрическа енергия. При някои видове светлина талий сулфид не провежда електричество много добре. Но при други видове светлина, тя провежда много добре. За да се възползват от този имот могат да бъдат изградени специални фотоклетки.За направата на нискотемпературни термометри може да се използва сплав от талий и живак . Сплавта се получава чрез стопяване и смесване на два или повече метала. Сместа има свойства, различни от тези на отделните метали. Талий-живачната сплав остава течна при -60 ° C (-76 ° F). При тази температура термометър само за живак би замръзнал твърдо.</p>
+        </ol>
+
+      </div>
+    </div>
+<script>rotateAnimation("img",20);</script>
+</body>
+</html>

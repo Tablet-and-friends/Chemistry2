@@ -17,10 +17,9 @@
             </a>
         </span>
         <ul>
-            <li><a class="active" href="../Home.html">Таблица</a></li>
+            <li><a class="top" href="../Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="IA.html">IA</a></li>
                     <li><a href="IIA.html">IIA</a></li>
                     <li><a href="IIIA.html">IIIA</a></li>
                     <li><a href="IVA.html">IVA</a></li>
@@ -29,7 +28,7 @@
                     <li><a href="VIIA.html">VIIA</a></li>
                 </ul>
             </li>
-            <li><a class = "top" href="../t.html">Игра</a></li>
+            <li><a class = "top" href="../t.html">Игри</a></li>
             <li><a class = "top" href="creators.html">Създатели</a></li>
         </ul>
         <p>ХИМИЯ</p >
@@ -62,6 +61,9 @@
              <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
              <div id="Br"><a href="Br.html">Бром (Br)</a></div>
              <div id="I"><a href="I.html">Йод (I)</a></div>
+             <div id="Pb"><a href="Pb.html">Олово (Pb)</a></div>
+             <div id="Bi"><a href="Bi.html">Бисмут (Bi)</a></div>
+             <div id="Ti"><a href="Ti.html">Талий (Ti)</a></div>
              </div>
          </div>
     </nav>
@@ -69,27 +71,73 @@
         <a href="#" class = "close-slide" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#physical">Физични Свойства</a>
-        <a href="#chemical">Химични Свойства</a>
-        <a href="#extraction">Получаване</a>
-        <a href="#use">Употреба</a>
+        <a href="#elek" onclick="closeSlideMenu()">Електронна конфигурация</a>
+        <a href="#physical" onclick="closeSlideMenu()">Физични Свойства</a>
+        <a href="#chemical" onclick="closeSlideMenu()">Химични Свойства</a>
+        <a href="#color" onclick="closeSlideMenu()">Цвят на пламъка</a>
+        <a href="#extraction" onclick="closeSlideMenu()">Получаване</a>
+        <a href="#use" onclick="closeSlideMenu();" >Значение и употреба</a>
     </div>
 
 
   <div class="main" id = "main-content">
       <h1>Алуминий (Al)</h1>
-      <img src="..\assets\IIIA\Al_Picture.jpg" alt="снимка на алуминий">
-      <div >
-        <img src="..\assets\IIIA\Al-sf.jpg" alt="кристална решетка">
-      </div>
+
       <div class="ElementInfo">
-        <p>Cl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="..\assets\IIIA\Al_Structure.png" alt="атомна структура на алуминий" class="Element">
-        <img src="..\info\Reactions\Al+HCl.png" alt="атомна структура на алуминий" class="Element">
-        <img src="..\info\Reactions\Al+O2.png" alt="атомна структура на алуминий" class="Element">
+        <p><img src="..\assets\IIIA\Al_Picture.jpg" alt="снимка на алуминий" class="picture_el" style="width: 10%;">Алуминият е вторият елемент от трета "А" група на периодичната система, позната още като "земната група" или "борната група". Тя включва още
+        елементите Бор (B), Галий (Ga), Индий (In) и Талий (Ti).</p>
+        <img id="img" src="..\assets\IIIA\Al_Structure.png" alt="атомна структура на алуминий" class="Element" style="width: 30%;">
+        <ol>
+          <li id="elek" style="font-size: 40px;">Електронна конфигурация
+          <div class="configuration">
+            <sub>13</sub>Al-1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>1</sup>
+          </div></li>
+          <li id="physical" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Физични свойства
+          <p>Алуминият има метален характер. При стайна температура е твърдо вещество, неразтворимо във вода. Характерни за него са относително ниската му плътност и устойчивостта му на корозия, дължаща се на пасивирането чрез образуване на плътен повърхностен слой от оксиди.
+          Алуминият е относително мек, траен, лек и ковък метал с цвят, вариращ от сребрист до мътносив в зависимост от грапавината на повърхността.Алуминият има около три пъти по-ниска плътност и модул на еластичност от стоманата, но е значително по-лесен за обработка, включително за изливане, изтегляне и екструдиране. Алуминиевите атоми образуват кристална решетка с кубична стенноцентрирана структура.
+        Алуминият е сред малкото метали, които запазват пълната си сребриста отражателна способност и във вид на фин прах.</p>
+</li>
+        <li id="chemical" style="font-size: 40px;">Химични свойства</li>
+          <p>Алуминият не взаимодейтва при обикновени условия с възду и вода. Това определя и неговот голяма корозионна устойчивост. Причината за това е, че на повърхността на елемента, алуминиевите атоми взаимодействат с кислорода и се образува тънка кора от диалуминиев триоксид, който пречи на реакцията да протече докрай.
+          Химичният елемент се пасивира. Ако металът е прахообразен и се поднесе на пламък, заради силното му сродство към кислорода, се наблюдава бурна реакция и алуминият изгаря при висока температура и с ярка светлина.
+        Процесът е екзотермичен. </p>
+        <div class="Reaction">
+          4Al + 3O<sub>2</sub> &rarr; 2Al<sub>2</sub>O<sub>3</sub>
+        </div>
+        <p>Алуминият има толкова голям афинитет към кислорода, че може да го отнема от оксидите на някои метали.</p>
+        <div class="Reaction">
+          2Al + Fe<sub>2</sub>O<sub>3</sub> &rarr; Al<sub>2</sub>O<sub>3</sub> + 2Fe
+        </div>
+      </ol>
+      <img src="..\assets\IIIA\Al-sf.jpg" alt="кристална решетка" class="Structures" style="width: 25%;">
+      <ol><li>
+        <p>Взаимодействие на алуминий с вода</p>
+        <div class="Reaction">
+          2Al + 6H<sub>2</sub>O &rarr; 2Al(OH)<sub>3</sub> + 3H<sub>2</sub>&uarr;
+        </div>
+        <p>Взаимодействие на алуминия с кисленини</p>
+        <div class="Reaction">
+          2Al + 6HCl &rarr; 2AlCl<sub>3</sub> + 3H<sub>2</sub>&uarr;
+        </div>
+        <p>Взаимодействие на алуминий с основи</p>
+        <div class="Reaction">
+          2Al + NaOH + 2HOH &rarr; 2[Na<sup>+</sup> + AlO<sub>2</sub><sup>-</sup>] + 3H<sub>2</sub>&uarr;
+        </div></li>
+          <li id="color" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Цвят на пламъка</li>
+          <p>Цветът на пламъка на алуминия е сребърнобял, а при много високи температури е светлосин.</p>
+          <li id="extraction" style="font-size: 40px;">Получаване</li>
+          <p>Производството на алуминий е двуетапен процес. Първо, алуминиевият оксид се отделя от боксита чрез процеса на Bayer. При този процес бокситът се смесва с натриев хидроксид (NaOH), който разтваря алуминиевия оксид. Останалите съединения в боксита са оставени след себе си.</p>
+          <li id="use" style="font-size: 40px;">Значение и употреба</li>
+          <p><img src="..\assets\IIIA\13-aluminii.png" alt="фрамар снимка" class="El_picture">Алуминият е най-изобилният метал в земната кора и третият най-изобилен химичен елемент в нея, след кислорода и силиция. Той съставя около 8% от масата на твърдата покривка на Земята. Химически активен, алуминият рядко се среща в природата в чист вид, а обикновено е съставна част от някой от повече от 270-те съдържащи алуминий минерали.
+          Сред тях основен източник за промишлен добив на алуминий е бокситът. Въпреки широкото разпространение на алуминия в природата, солите му не се метаболизират от никоя известна форма на живот, като растенията и животните добре понасят метала.
+          Устойчивите алуминиеви атомни ядра се образуват при ядрен синтез на водород с магнезий в големите звезди или свръхнови.
+          Самороден алуминий се среща само като малка фракция в лишена от кислород среда, като вътрешността на някои вулкани.
+          Широко се прилага като конструктивен материал. Физичните му свойства го правят популярен при производството на кухненски прибори.
+          Основният недостатък на алуминия е малката механична здравина. Ето защо обикновено се използва сплав с малки количества мед и магнезий, известна под името дуралуминий (дурал). Тя широко се използва в производството на самолети и други летателни апарати, както и във военната техника. Дуралуминият е як като желязо, но е три пъти по-лек от него. За направата на алуминиево фолио и опаковки на храни се използва алуминий, легиран с минимални количества силиций, желязо, манган и магнезий. Алуминият се използва в металургията при получаването на някои метали от метални оксиди. Този процес се нарича алуминотермия. Освен това алуминият се използва за направата на огледала чрез алуминиево фолио. Друго приложение намира в медицината за направата на протези, а също така и за прочистване на вода чрез алуминиеви соли.</p>
+        </ol>
+
       </div>
     </div>
-
+<script>rotateAnimation("img",20);</script>
 </body>
 </html>

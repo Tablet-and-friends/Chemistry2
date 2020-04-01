@@ -17,10 +17,9 @@
             </a>
         </span>
         <ul>
-            <li><a class="active" href="../Home.html">Таблица</a></li>
+            <li><a class="top" href="../Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="IA.html">IA</a></li>
                     <li><a href="IIA.html">IIA</a></li>
                     <li><a href="IIIA.html">IIIA</a></li>
                     <li><a href="IVA.html">IVA</a></li>
@@ -29,7 +28,7 @@
                     <li><a href="VIIA.html">VIIA</a></li>
                 </ul>
             </li>
-            <li><a class = "top" href="../t.html">Игра</a></li>
+            <li><a class = "top" href="../t.html">Игри</a></li>
             <li><a class = "top" href="creators.html">Създатели</a></li>
         </ul>
         <p>ХИМИЯ</p >
@@ -62,6 +61,9 @@
              <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
              <div id="Br"><a href="Br.html">Бром (Br)</a></div>
              <div id="I"><a href="I.html">Йод (I)</a></div>
+             <div id="Pb"><a href="Pb.html">Олово (Pb)</a></div>
+             <div id="Bi"><a href="Bi.html">Бисмут (Bi)</a></div>
+             <div id="Ti"><a href="Ti.html">Талий (Ti)</a></div>
              </div>
          </div>
     </nav>
@@ -69,25 +71,69 @@
         <a href="#" class = "close-slide" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#physical">Физични Свойства</a>
-        <a href="#chemical">Химични Свойства</a>
-        <a href="#extraction">Получаване</a>
-        <a href="#use">Употреба</a>
+        <a href="#elek" onclick="closeSlideMenu()">Електронна конфигурация</a>
+        <a href="#physical" onclick="closeSlideMenu()">Физични Свойства</a>
+        <a href="#chemical" onclick="closeSlideMenu()">Химични Свойства</a>
+        <a href="#extraction" onclick="closeSlideMenu()">Получаване</a>
+        <a href="#use" onclick="closeSlideMenu();" >Значение и употреба</a>
     </div>
 
 
   <div class="main" id = "main-content">
       <h1>Галий (Ga)</h1>
-      <img src="..\assets\IIIA\Ga_Picture.jpg" alt="снимка на галий">
-      <div >
-        <img src="..\assets\IIIA\Ga-sf.jpg" alt="кристална решетка">
-      </div>
+
       <div class="ElementInfo">
-        <p>Cl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="..\assets\IIIA\Ga_Structure.png" alt="атомна структура на галий" class="Element">
+        <p>  <img src="..\assets\IIIA\Ga_Picture.jpg" alt="снимка на галий" class="picture_el">Галият е третият елемент от трета "А" група на периодичната система, позната още като "земната група" или "борната група". Тя включва още
+        елементите Бор (B), Алуминий (Al), Индий (In) и Талий (Ti).</p>
+          <img id="img" src="..\assets\IIIA\Ga_Structure.png" alt="атомна структура на галий" class="Element">
+        <ol>
+          <li id="elek" style="font-size: 40px; ">Електронна конфигурация</li>
+          <div class="configuration">
+          <sub>31</sub>Ga-1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>10</sup>4p<sup>1</sup>
+          </div>
+          <li id="physical" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Физични свойства
+          <p>Галият има метален характер. В чистото си състояние той  е мек метал, има блестящ сребрист цвят и стъклоподобна структура. Избягва се съхранението му в стъклени или метални съдове защото при замръзване той увеличава обема си 3,1 %. Галият е сред най-плътните течности и отстъпва по плътност на течната си фаза само на силиция, германия, бисмута и водата.
+          Галият не кристализира в нито една проста кристална структура. Стабилната фаза при нормални условия е орторомбична с 8 атоми.</p></li>
+          <li id="chemical" style="font-size: 40px;">Химични свойства</li>
+          <p>Галият е доста реактивен елемент. Той се комбинира с повечето неметали при високи температури и реагира както с киселини, така и с основи. </p>
+</ol>
+<div >
+  <img src="..\assets\IIIA\Ga-sf.jpg" alt="кристална решетка" class="Structures">
+</div>
+<ol><li>
+          <p>Взаимодействие на галий с кислород</p>
+          <div class="Reaction">
+            4Ga + O<sub>2</sub> &rarr; 2Ga<sub>2</sub>O<sub>3</sub>
+          </div>
+          <p>Взаимодействие на галий с неметали</p>
+          <div class="Reaction">
+            16Ga + 3S<sub>8</sub> &rarr; 8Ga<sub>2</sub>S<sub>3</sub>
+          </div>
+          <p>Взаимодействие на галий с кисленини</p>
+          <div class="Reaction">
+            2Ga + 6HCl &rarr; 2GaCl<sub>3</sub> + 3H<sub>2</sub>&uarr;
+          </div>
+          <p>Взаимодействие на галий с водa</p>
+          <div class="Reaction">
+              2Ga + 6H<sub>2</sub>O &rarr; 2Ga(OH)<sub>3</sub> + 3H<sub>2</sub>&uarr;
+          </div>
+          <p>Взаимодействие на галий с водород</p>
+          <div class="Reaction">
+          2Ga + 3H<sub>2</sub> &rarr; 2GaH<sub>3</sub>
+        </div></li>
+          <li id="extraction" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Получаване</li>
+          <p>Галият може да се плучи след като се прекара елетричен ток през едно от неговите съединения</p>
+          <div class="Reaction">
+            Ga<sub>2</sub>O<sub>3</sub> &rarr; 2Ga<sup>3+</sup> + 6O<sup>-</sup>
+          </div>
+          <li id="use" style="font-size: 40px;  padding-top:70px; margin-top: -70px;">Значение и употреба</li>
+          <p><img src="..\assets\IIIA\31-galii.png" alt="фрамар снимка" class="El_picture">Галият и неговите съединения са донякъде опасни за здравето на хората и животните. Те произвеждат метален вкус в устата, кожен обрив и намаляване на производството на кръвни клетки. С галия и неговите съединения трябва да се работи с повишено внимание
+          Около 95 процента от целия произведен галий се използва за производството на едно съединение, галиев арсенид (GaAs). Галиевият арсенид има способността да преобразува електрически ток директно в светлина. Осветените номера на ръчни калкулатори например се произвеждат от устройство, известно като светодиод.
+            Галиевият арсенид се използва за направата на светодиоди. Светодиод позволява електрически ток да тече от едната страна, но не и от другата. Когато се влива в парче галиев арсенид, се получава светкавица.</p>
+        </ol>
+
       </div>
     </div>
-
+<script>rotateAnimation("img",20);</script>
 </body>
 </html>
